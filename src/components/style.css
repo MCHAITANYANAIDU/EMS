@@ -1,24 +1,43 @@
-
-/* Background Styling */
-.loginPage {
-    background: url("images/ems.png");
-    background-color: #f0f0f0;
-    padding: 50px;
-    background-image: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.5)), url("images/ems.png");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.background {
-    background-image: url('./assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-}
-
-
+/* Background styling for the login page */
+.login-page {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Login form container styling */
+  .login-form {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Form label styling */
+  .login-form .form-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Input fields styling */
+  .login-form .form-control {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .login-form .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+  }
+  
+  /* Button styling */
+  .login-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .login-form .btn:hover {
+    background-color: #218838;
+  }
+  
