@@ -1,12 +1,16 @@
 /* Background styling for the login page */
 .login-page {
-    background-color: #f8f9fa;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the image doesn't scroll */
     padding: 20px;
   }
   
   /* Login form container styling */
   .login-form {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency for overlay effect */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
@@ -39,5 +43,16 @@
   
   .login-form .btn:hover {
     background-color: #218838;
+  }
+  
+  /* Styling for the terms and conditions link */
+.form-check-label a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .form-check-label a:hover {
+    color: #0056b3;
+    text-decoration: none;
   }
   
