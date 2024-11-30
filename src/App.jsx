@@ -8,7 +8,9 @@ import Home from './components/Home';
 import Employee from './components/Employee';
 import Category from './components/Category';
 import Profile from './components/Profile';
-import AddCategory from './components/AddCategory';
+import AddCategory from './components/Addcategory';
+import AddEmployee from './components/AddEmployee';
+
 
 function App() {
 
@@ -24,7 +26,8 @@ function App() {
        <Route path="/dashboard/employee" element={<Employee />}></Route>
        <Route path="/dashboard/category" element={<Category />}></Route>
        <Route path="/dashboard/profile" element={<Profile />}></Route>
-       <Route path="/dashboard/add_category" element={<AddCategory />}></Route>   
+       <Route path="/dashboard/add_category" element={<AddCategory />}></Route> 
+       <Route path="/dashboard/add_employee" element={<AddEmployee />}></Route>     
        
 
      </Route>
