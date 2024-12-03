@@ -3,6 +3,7 @@ import cors from "cors";  // Import cors
 import Connection from "./utilis/db.js"; // Assuming this is the MySQL connection object
 import { adminRouter } from "./Routes/AdminRoute.js";
 
+
 const app = express();
 
 // Apply CORS middleware
