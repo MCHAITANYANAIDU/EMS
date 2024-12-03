@@ -42,14 +42,14 @@ const AddEmployee = () => {
     formData.append('category_id', employee.category_id);
 
     axios.post('http://localhost:3000/auth/add_employee', formData)
-    .then(result => {
-        if(result.data.Status) {
-            navigate('/dashboard/employee')
+      .then(result => {
+        if (result.data.Status) {
+          navigate('/dashboard/employee')
         } else {
-            alert(result.data.Error)
+          alert(result.data.Error)
         }
-    })
-    .catch(err => console.log(err))
+      })
+      .catch(err => console.log(err))
   }
 
   return (
@@ -133,7 +133,7 @@ const AddEmployee = () => {
               Category
             </label>
             <select name="category" id="category" className="form-select"
-                onChange={(e) => setEmployee({...employee, category_id: e.target.value})}>
+              onChange={(e) => setEmployee({ ...employee, category_id: e.target.value })}>
               {category.map((c) => {
                 return <option value={c.id}>{c.name}</option>;
               })}
@@ -148,7 +148,7 @@ const AddEmployee = () => {
               className="form-control rounded-0"
               id="inputGroupFile01"
               name="image"
-              onChange={(e) => setEmployee({...employee, image: e.target.files[0]})}
+              onChange={(e) => setEmployee({ ...employee, image: e.target.files[0] })}
             />
           </div>
           <div className="col-12">
